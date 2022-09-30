@@ -1,6 +1,13 @@
 import { Hero } from "../sections";
+import { Agency } from "../sections";
 
 const heroProps = {
+  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
+  title: "Agency procurement, outsourced.",
+  description: "Start the process here",
+  ctaText: "Start",
+};
+const agencyProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
   title: "Agency procurement, outsourced.",
   description: "Start the process here",
@@ -19,8 +26,8 @@ export default function Home() {
         />
       </head>
       <div>
-        <Hero {...heroProps} />
-        {/** Other sections */}
+        {/* <Hero {...heroProps} /> */}
+        <Agency {...agencyProps} />
       </div>
     </>
   );
