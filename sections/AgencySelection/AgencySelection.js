@@ -5,12 +5,20 @@ import {
   StyledTextContainer,
   StyledImageContainer,
   StyledCardsContainer,
+  StyledTextPopup,
   StyledTitle,
   StyledDescription,
   StyledCard,
 } from "./elements";
 
-export const Agency = ({ title, description, videoImage, cards, ...props }) => {
+export const AgencySelection = ({
+  title,
+  description,
+  videoImage,
+  cards,
+  popupText,
+  ...props
+}) => {
   return (
     <>
       <StyledContainer {...props}>
@@ -30,6 +38,7 @@ export const Agency = ({ title, description, videoImage, cards, ...props }) => {
           />
         </StyledImageContainer>
         <StyledCardsContainer>
+          {popupText != "" && <StyledTextPopup>{popupText}</StyledTextPopup>}
           {cards.map((card) => (
             <StyledCard key={card.title} {...card} />
           ))}

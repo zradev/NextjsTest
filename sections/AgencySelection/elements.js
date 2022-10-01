@@ -4,6 +4,7 @@ import {
   SectionContainer,
   SectionHeading,
   SectionSubheading,
+  SectionParagraph,
 } from "~/components";
 
 export const StyledContainer = styled((props) => (
@@ -43,6 +44,7 @@ export const StyledImageContainer = styled(({ height, width, ...props }) => (
 `;
 
 export const StyledCardsContainer = styled((props) => <div {...props} />)`
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 472px;
@@ -66,6 +68,23 @@ export const StyledCard = styled(({ width, background, ...props }) => (
     h2 {
       color: #1a71f8;
     }
+  }
+`;
+
+export const StyledTextPopup = styled((props) => (
+  <SectionParagraph {...props} />
+))`
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    transform: rotate(10deg);
+    color: #e44e5b;
+    max-width: 125px;
+    word-wrap: break-word;
+    font-weight: 700;
   }
 `;
 

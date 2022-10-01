@@ -1,5 +1,5 @@
 import { Hero } from "../sections";
-import { Agency } from "../sections";
+import { AgencySelection } from "../sections";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -16,6 +16,7 @@ const agencyProps = {
     width: 300,
     height: 520,
   },
+  popupText: "link to breif generator??",
   cards: [
     {
       title: "Brief",
@@ -69,7 +70,7 @@ export default function Home() {
       </head>
       <div>
         {/* <Hero {...heroProps} /> */}
-        <Agency {...agencyProps} />
+        <AgencySelection {...agencyProps} />
       </div>
     </>
   );
