@@ -68,6 +68,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </head>
+      {/* It says they're sections, so let's assume they're on the same page. If they were in different pages I would use routes. */}
       <div>
         <Hero {...heroProps} />
         <AgencySelection {...agencyProps} />

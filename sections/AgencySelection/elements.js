@@ -10,6 +10,7 @@ import {
 export const StyledContainer = styled((props) => (
   <SectionContainer {...props} />
 ))`
+  margin-top: 80px;
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -18,6 +19,7 @@ export const StyledContainer = styled((props) => (
   background-image: url("/img/background.png");
   @media (max-width: 1024px) {
     flex-direction: column;
+    border-top: 1px solid #f1f1f1;
   }
 `;
 

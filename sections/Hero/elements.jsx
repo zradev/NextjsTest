@@ -67,6 +67,7 @@ export const StyledImageContainer = styled(({ ...props }) => (
   margin-left: auto;
   @media (max-width: 1024px) {
     width: 100vw;
-    margin: auto;
+    margin: 0;
+    margin-bottom: 30px;
   }
 `;
